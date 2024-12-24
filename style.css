@@ -1,0 +1,40 @@
+body {
+    background: yellow;
+    margin-left: 25%;
+}
+h1
+{
+    text-decoration: dashed;
+}
+
+#reiniciar
+{
+    background-color: orangered;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carta.revelada {
+    background-color:chocolate;
+}
+
+.carta.pareja {
+    background-color: cyan;
+    color:cyan;
+}
